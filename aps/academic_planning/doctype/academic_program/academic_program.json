@@ -20,7 +20,13 @@
   "study_methods_in_the_program",
   "location_of_delivery",
   "minimum_grade_requirements",
-  "date_of_program_development"
+  "date_of_program_development",
+  "more_section",
+  "reviewed_by",
+  "column_break_3gnz",
+  "prepared_by",
+  "column_break_hyih",
+  "program_coordinator"
  ],
  "fields": [
   {
@@ -110,11 +116,39 @@
    "fieldtype": "Select",
    "label": "Entry requirements",
    "options": "\nHigh School degree\nBachelor's degree\nMaster's degree\nDoctor's degree"
+  },
+  {
+   "fieldname": "more_section",
+   "fieldtype": "Section Break",
+   "label": "More"
+  },
+  {
+   "fieldname": "reviewed_by",
+   "fieldtype": "Small Text",
+   "label": "Reviewed By"
+  },
+  {
+   "fieldname": "column_break_3gnz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Small Text",
+   "label": "Prepared By"
+  },
+  {
+   "fieldname": "column_break_hyih",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "program_coordinator",
+   "fieldtype": "Small Text",
+   "label": "Program Coordinator"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-20 02:18:43.973533",
+ "modified": "2024-01-20 02:51:48.635205",
  "modified_by": "Administrator",
  "module": "Academic Planning",
  "name": "Academic Program",
