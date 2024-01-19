@@ -1,0 +1,127 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-20 01:57:34.250801",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "course_details_section",
+  "course_title",
+  "course_type",
+  "course_code_and_number",
+  "credit_hours",
+  "study_level",
+  "semester",
+  "pre_requisites",
+  "co_requisites",
+  "language_of_teaching_the_course",
+  "study_system",
+  "prepared_by",
+  "date_of_approval",
+  "course_description"
+ ],
+ "fields": [
+  {
+   "fieldname": "course_details_section",
+   "fieldtype": "Section Break",
+   "label": "Course Details"
+  },
+  {
+   "fieldname": "course_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Course Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "course_type",
+   "fieldtype": "Select",
+   "label": "Course Type",
+   "options": "\nUniversity Requirement\nFaculty Requirement\nDepartment Requirement\nProgram Requirement"
+  },
+  {
+   "fieldname": "course_code_and_number",
+   "fieldtype": "Data",
+   "label": "Course Code and Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "credit_hours",
+   "fieldtype": "Int",
+   "label": "Credit Hours"
+  },
+  {
+   "fieldname": "study_level",
+   "fieldtype": "Select",
+   "label": "Study Level",
+   "options": "\nFirst Year\nSecond Year\nThird Year\nFourth Year"
+  },
+  {
+   "fieldname": "semester",
+   "fieldtype": "Select",
+   "label": "Semester",
+   "options": "\nFirst Semester\nSecond Semester"
+  },
+  {
+   "fieldname": "pre_requisites",
+   "fieldtype": "Small Text",
+   "label": "Pre requisites"
+  },
+  {
+   "fieldname": "co_requisites",
+   "fieldtype": "Small Text",
+   "label": "Co requisites"
+  },
+  {
+   "fieldname": "language_of_teaching_the_course",
+   "fieldtype": "Select",
+   "label": "Language of teaching the course",
+   "options": "\nArabic\nEnglish\nArabic / English"
+  },
+  {
+   "fieldname": "study_system",
+   "fieldtype": "Select",
+   "label": "Study System",
+   "options": "\nTerm Based System\nFull Time"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Small Text",
+   "label": "Prepared By"
+  },
+  {
+   "fieldname": "date_of_approval",
+   "fieldtype": "Date",
+   "label": "Date of Approval"
+  },
+  {
+   "fieldname": "course_description",
+   "fieldtype": "Text Editor",
+   "label": "Course Description "
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-20 02:04:35.862780",
+ "modified_by": "Administrator",
+ "module": "Academic Planning",
+ "name": "Course",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
