@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-20 01:45:21.008546",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "faculty_name",
+  "university_name",
+  "fac_address",
+  "fac_description",
+  "faculty_mission",
+  "faculty_vision",
+  "faculty_goals"
+ ],
+ "fields": [
+  {
+   "fieldname": "faculty_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Faculty Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "university_name",
+   "fieldtype": "Link",
+   "label": "University Name",
+   "options": "University"
+  },
+  {
+   "fieldname": "fac_address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "fac_description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "faculty_mission",
+   "fieldtype": "Text Editor",
+   "label": "Faculty Mission"
+  },
+  {
+   "fieldname": "faculty_vision",
+   "fieldtype": "Text Editor",
+   "label": "Faculty Vision"
+  },
+  {
+   "fieldname": "faculty_goals",
+   "fieldtype": "Text Editor",
+   "label": "Faculty Goals"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-20 01:48:27.506906",
+ "modified_by": "Administrator",
+ "module": "Academic Planning",
+ "name": "Faculty",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

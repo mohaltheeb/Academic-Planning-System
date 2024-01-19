@@ -1,1 +1,2 @@
 Academic Planning System
+Academic Planning
