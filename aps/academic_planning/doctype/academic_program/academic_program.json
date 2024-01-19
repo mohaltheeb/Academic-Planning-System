@@ -1,0 +1,139 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-20 02:07:58.620458",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "academic_program_details_section",
+  "scientific_name_of_the_program",
+  "program_type",
+  "total_credit_hours_required_to_award_the_degree",
+  "the_body_responsible_for_granting_the_degree",
+  "the_body_responsible_for_the_program",
+  "award_granted_on_completion_of_the_program",
+  "study_system",
+  "study_language_of_the_program",
+  "entry_requirements",
+  "departments_participating_in_the_program",
+  "starting_year_of_the_program",
+  "study_methods_in_the_program",
+  "location_of_delivery",
+  "minimum_grade_requirements",
+  "date_of_program_development"
+ ],
+ "fields": [
+  {
+   "fieldname": "academic_program_details_section",
+   "fieldtype": "Section Break",
+   "label": "Academic Program Details"
+  },
+  {
+   "fieldname": "scientific_name_of_the_program",
+   "fieldtype": "Data",
+   "label": "Scientific name of the program"
+  },
+  {
+   "fieldname": "program_type",
+   "fieldtype": "Select",
+   "label": "Program Type",
+   "options": "\nBachelor\nMaster\nDoctor\nDiploma"
+  },
+  {
+   "fieldname": "total_credit_hours_required_to_award_the_degree",
+   "fieldtype": "Int",
+   "label": "Total credit hours required to award the degree "
+  },
+  {
+   "fieldname": "the_body_responsible_for_granting_the_degree",
+   "fieldtype": "Link",
+   "label": "The body responsible for granting the degree",
+   "options": "Faculty Department"
+  },
+  {
+   "fieldname": "the_body_responsible_for_the_program",
+   "fieldtype": "Link",
+   "label": "The body responsible for the program",
+   "options": "Faculty Department"
+  },
+  {
+   "fieldname": "award_granted_on_completion_of_the_program",
+   "fieldtype": "Data",
+   "label": "Award granted on completion of the program"
+  },
+  {
+   "fieldname": "study_system",
+   "fieldtype": "Data",
+   "label": "Study system"
+  },
+  {
+   "fieldname": "study_language_of_the_program",
+   "fieldtype": "Select",
+   "label": "Study Language of the Program",
+   "options": "\nArabic\nEnglish\nArabic / English"
+  },
+  {
+   "fieldname": "departments_participating_in_the_program",
+   "fieldtype": "Link",
+   "label": "Departments participating in the program",
+   "options": "Faculty Department"
+  },
+  {
+   "fieldname": "starting_year_of_the_program",
+   "fieldtype": "Int",
+   "label": "Starting year of the program"
+  },
+  {
+   "fieldname": "study_methods_in_the_program",
+   "fieldtype": "Select",
+   "label": "Study methods in the program",
+   "options": "\nLecture\nTutorials\nLabs\nTraning"
+  },
+  {
+   "fieldname": "location_of_delivery",
+   "fieldtype": "Select",
+   "label": "Location of Delivery",
+   "options": "\nFaculty Campus\nOnline"
+  },
+  {
+   "fieldname": "minimum_grade_requirements",
+   "fieldtype": "Data",
+   "label": "Minimum grade requirements"
+  },
+  {
+   "fieldname": "date_of_program_development",
+   "fieldtype": "Date",
+   "label": "Date of program development"
+  },
+  {
+   "fieldname": "entry_requirements",
+   "fieldtype": "Select",
+   "label": "Entry requirements",
+   "options": "\nHigh School degree\nBachelor's degree\nMaster's degree\nDoctor's degree"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-20 02:18:43.973533",
+ "modified_by": "Administrator",
+ "module": "Academic Planning",
+ "name": "Academic Program",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
