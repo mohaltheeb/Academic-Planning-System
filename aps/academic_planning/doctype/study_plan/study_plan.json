@@ -1,14 +1,51 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:study_plan_name",
  "creation": "2024-01-20 02:20:31.368117",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "study_plan_details_section",
-  "academic_program",
   "study_plan_name",
-  "faculty"
+  "academic_program",
+  "program_name",
+  "faculty",
+  "number_of_courses",
+  "issue_date",
+  "effective_year",
+  "study_plan_details_tab",
+  "distributed_hours_tab",
+  "university_compulsory",
+  "column_break_qcpf",
+  "university_compulsory_credit_hours",
+  "uni_com_relational_weight",
+  "column_break_x8cl",
+  "university_elective",
+  "column_break_ulmn",
+  "university_elective_credit_hours",
+  "uni_ele_relational_weight",
+  "section_break_6s2v",
+  "faculty_compulsory",
+  "column_break_y5gh",
+  "faculty_compulsory_credit_hours",
+  "fac_com_relational_weight",
+  "section_break_c2aj",
+  "faculty_elective",
+  "column_break_dgbb",
+  "faculty_elective_credit_hours",
+  "fac_ele_relational_weight",
+  "section_break_iqzi",
+  "program_compulsory",
+  "column_break_umnk",
+  "program_compulsory_credit_hours",
+  "pro_com_relational_weight",
+  "section_break_myhp",
+  "program_elective",
+  "column_break_uavb",
+  "program_elective_credit_hours",
+  "pro_ele_relational_weight",
+  "section_break_g6nu"
  ],
  "fields": [
   {
@@ -27,21 +64,191 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Study Plan Name",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "faculty",
    "fieldtype": "Link",
    "label": "Faculty",
    "options": "Faculty"
+  },
+  {
+   "fieldname": "program_name",
+   "fieldtype": "Data",
+   "label": "Program Name"
+  },
+  {
+   "fieldname": "issue_date",
+   "fieldtype": "Date",
+   "label": "Issue Date"
+  },
+  {
+   "fieldname": "effective_year",
+   "fieldtype": "Data",
+   "label": "Effective Year"
+  },
+  {
+   "fieldname": "study_plan_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Study Plan Details"
+  },
+  {
+   "fieldname": "distributed_hours_tab",
+   "fieldtype": "Tab Break",
+   "label": "Distributed Hours"
+  },
+  {
+   "fieldname": "university_compulsory",
+   "fieldtype": "Int",
+   "label": "University Compulsory"
+  },
+  {
+   "fieldname": "column_break_qcpf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "university_compulsory_credit_hours",
+   "fieldtype": "Int",
+   "label": "University Compulsory Credit Hours"
+  },
+  {
+   "fieldname": "column_break_x8cl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "uni_com_relational_weight",
+   "fieldtype": "Data",
+   "label": "Relational Weight"
+  },
+  {
+   "fieldname": "university_elective",
+   "fieldtype": "Data",
+   "label": "University Elective"
+  },
+  {
+   "fieldname": "column_break_ulmn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "university_elective_credit_hours",
+   "fieldtype": "Data",
+   "label": "University Elective Credit Hours"
+  },
+  {
+   "fieldname": "uni_ele_relational_weight",
+   "fieldtype": "Data",
+   "label": "Relational Weight"
+  },
+  {
+   "fieldname": "section_break_6s2v",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "faculty_compulsory",
+   "fieldtype": "Int",
+   "label": "Faculty Compulsory"
+  },
+  {
+   "fieldname": "column_break_y5gh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "faculty_compulsory_credit_hours",
+   "fieldtype": "Int",
+   "label": "Faculty Compulsory Credit Hours"
+  },
+  {
+   "fieldname": "fac_com_relational_weight",
+   "fieldtype": "Data",
+   "label": "Relational Weight"
+  },
+  {
+   "fieldname": "section_break_c2aj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "faculty_elective",
+   "fieldtype": "Data",
+   "label": "Faculty Elective"
+  },
+  {
+   "fieldname": "column_break_dgbb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "faculty_elective_credit_hours",
+   "fieldtype": "Data",
+   "label": "Faculty Elective Credit Hours"
+  },
+  {
+   "fieldname": "fac_ele_relational_weight",
+   "fieldtype": "Data",
+   "label": "Relational Weight"
+  },
+  {
+   "fieldname": "section_break_iqzi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "number_of_courses",
+   "fieldtype": "Int",
+   "label": "Number of Courses"
+  },
+  {
+   "fieldname": "program_compulsory",
+   "fieldtype": "Int",
+   "label": "Program Compulsory"
+  },
+  {
+   "fieldname": "column_break_umnk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "program_compulsory_credit_hours",
+   "fieldtype": "Int",
+   "label": "Program Compulsory Credit Hours"
+  },
+  {
+   "fieldname": "pro_com_relational_weight",
+   "fieldtype": "Data",
+   "label": "Relational Weight"
+  },
+  {
+   "fieldname": "program_elective",
+   "fieldtype": "Data",
+   "label": "Program Elective"
+  },
+  {
+   "fieldname": "column_break_uavb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "program_elective_credit_hours",
+   "fieldtype": "Data",
+   "label": "Program Elective Credit Hours"
+  },
+  {
+   "fieldname": "pro_ele_relational_weight",
+   "fieldtype": "Data",
+   "label": "Relational Weight"
+  },
+  {
+   "fieldname": "section_break_myhp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_g6nu",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-20 02:25:40.864271",
+ "modified": "2024-01-20 04:05:33.619198",
  "modified_by": "Administrator",
  "module": "Academic Planning",
  "name": "Study Plan",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
