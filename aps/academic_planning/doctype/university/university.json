@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:university_name",
  "creation": "2024-01-20 01:41:21.018732",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -19,7 +20,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "University Name",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "address",
@@ -49,10 +51,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-20 01:44:37.059147",
+ "modified": "2024-01-20 03:10:07.810846",
  "modified_by": "Administrator",
  "module": "Academic Planning",
  "name": "University",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

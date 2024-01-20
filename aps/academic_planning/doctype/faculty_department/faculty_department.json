@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:depatment_name",
  "creation": "2024-01-20 01:49:43.054490",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -19,7 +20,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Depatment Name",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "faculty_name",
@@ -55,10 +57,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-20 01:53:30.870104",
+ "modified": "2024-01-20 03:10:57.850906",
  "modified_by": "Administrator",
  "module": "Academic Planning",
  "name": "Faculty Department",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

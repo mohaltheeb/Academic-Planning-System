@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:course_title",
  "creation": "2024-01-20 01:57:34.250801",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -12,12 +13,12 @@
   "credit_hours",
   "study_level",
   "semester",
-  "pre_requisites",
-  "co_requisites",
   "language_of_teaching_the_course",
   "study_system",
-  "prepared_by",
   "date_of_approval",
+  "pre_requisites",
+  "co_requisites",
+  "prepared_by",
   "course_description"
  ],
  "fields": [
@@ -31,13 +32,14 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Course Title",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "course_type",
    "fieldtype": "Select",
    "label": "Course Type",
-   "options": "\nUniversity Requirement\nFaculty Requirement\nDepartment Requirement\nProgram Requirement"
+   "options": "\nUniversity Requirement\nFaculty Requirement\nProgram Requirement"
   },
   {
    "fieldname": "course_code_and_number",
@@ -102,10 +104,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-20 02:04:35.862780",
+ "modified": "2024-01-20 03:11:32.541464",
  "modified_by": "Administrator",
  "module": "Academic Planning",
  "name": "Course",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
